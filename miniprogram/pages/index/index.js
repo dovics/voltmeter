@@ -194,5 +194,9 @@ Page({
   closeBluetoothAdapter() {
     wx.closeBluetoothAdapter()
     this._discoveryStarted = false
+    this.setData({
+      devices:[],
+      chs:[]
+    })
   },
 })
